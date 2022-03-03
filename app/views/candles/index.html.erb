@@ -8,6 +8,7 @@
           <div class="card-body">
             <h5 class="card-title"><%= candle.name %></h5>
             <p class="card-text"><%= candle.category.name %></p>
+            <p>Amount: <%= humanized_money_with_symbol(candle.price) %></p>
             <%= link_to "More details", candle_path(candle), class: "btn btn-primary" %>
           </div>
         </div>

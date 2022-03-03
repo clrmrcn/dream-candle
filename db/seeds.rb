@@ -19,13 +19,13 @@ vanilla = Category.create!(name: 'vanilla')
 strawberry = Category.create!(name: 'strawberry')
 
 puts 'Creating teddies...'
-candle1 = Candle.create!(name: 'Madagascan Vanilla', category: vanilla)
+candle1 = Candle.create!(name: 'Madagascan Vanilla', category: vanilla, price: 15)
 candle1.photo.attach(io: file1, filename: 'nes.png', content_type: 'image/png')
 
-candle2 = Candle.create!(name: 'Wild Jungle', category: vanilla)
+candle2 = Candle.create!(name: 'Wild Jungle', category: vanilla, price: 13)
 candle2.photo.attach(io: file2, filename: 'nes.png', content_type: 'image/png')
 
-candle3 = Candle.create!(name: 'Heaven Scent', category: strawberry)
+candle3 = Candle.create!(name: 'Heaven Scent', category: strawberry, price: 17)
 candle3.photo.attach(io: file3, filename: 'nes.png', content_type: 'image/png')
 
 puts 'Finished!'
