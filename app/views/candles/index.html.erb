@@ -4,7 +4,7 @@
     <% @candles.each do |candle| %>
       <div class="col-6 col-md-4">
         <div class="card">
-          <%= image_tag candle.photo_url , class: "card-img-top" %>
+          <%= cl_image_tag candle.photo.key, class: "card-img-top" %>
           <div class="card-body">
             <h5 class="card-title"><%= candle.name %></h5>
             <p class="card-text"><%= candle.category.name %></p>
