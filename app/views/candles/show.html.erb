@@ -9,4 +9,8 @@
       <p>Amount: <%= humanized_money_with_symbol(@candle.price) %></p>
     </div>
   </div>
+  <%= form_tag orders_path do %>
+  <%= hidden_field_tag 'candle_id', @candle.id %>
+  <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+<% end %>
 </div>
